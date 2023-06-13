@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora</h1>
+    </header>
+    <section>
+        <div >
+            <p>Escreva seu Nome
+                <input type="text" name="" id="nome">
+            </p>
+            <p> 
+               <input type="number" name="" id="n1"> 
+               <input type="number" name="" id="n2">
+            </p>
+            <p>
+                <input type="radio" name="operação" id="adição" onclick="somar ()" >
+                <label for="adição">+</label>
+            </p>
+            <p>
+                <input type="radio" name="operação" id="diminuir" onclick="diminuir ()" >
+                <label for="adição">-</label>
+            </p>
+            <p>
+                <input type="radio" name="operação" id="multiplicação" onclick="multiplicação ()" >
+                <label for="adição">*</label>
+                
+            </p>
+            <p>
+                <input type="radio" name="operação" id="divisão" onclick="divisão ()" >
+                <label for="adição">/</label>
+            </p>
+        </div>
+        <div id="resp">
+            Preencha os dados acima para efetuar o Calculo
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Feito por Kaiky</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

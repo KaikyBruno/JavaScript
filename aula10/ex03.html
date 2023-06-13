@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        input {
+            width: 100px;
+            font: normal 18pt arial;
+        }
+        div {
+            margin-top: 10px;
+            font: normal 18pt arial; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Mini Calculadora</h1>
+    <input type="number" name="" id="n1"> +
+    <input type="number" name="" id="n2">
+    <input type="button" value="=" onclick="igualsoma ()">
+    <div id="resp1"> </div>
+    <input type="number" name="" id="n3"> -
+    <input type="number" name="" id="n4">
+    <input type="button" value="=" onclick="igualdiminuir ()">
+    <div id="resp2"> </div>
+    <input type="number" name="" id="n5"> *
+    <input type="number" name="" id="n6">
+    <input type="button" value="=" onclick="igualvezes ()">
+    <div id="resp3"> </div>
+    <input type="number" name="" id="n7"> /
+    <input type="number" name="" id="n8">
+    <input type="button" value="=" onclick="igualdivisão ()">
+    <div id="resp4"> </div>
+    <h1>IMC</h1>
+    <div>Seu Peso</div>
+    <input type="number" name="" id="peso">
+    <div>Sua altura</div>
+    <input type="number" name="" id="altura"> 
+    <div></div>
+    <input type="button" value="Calcular" onclick="IMC ()">
+    <div id="respimc"></div>
+    
+
+    <script>
+        function igualsoma () {
+            var res = window.document.getElementById ("resp4")
+            var tex1 = window.document.getElementById("n1")
+            var tex2 = window.document.getElementById("n2")
+            var n1 = Number((tex1.value))
+            var n2 = Number((tex2.value))
+            var soma = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${soma}</strong>`
+               
+        }
+        function igualdiminuir () {
+            var res1 = window.document.getElementById ("resp4")
+            var tex3 = window.document.getElementById("n3")
+            var tex4 = window.document.getElementById("n4")
+            var n3 = Number((tex3.value))
+            var n4 = Number((tex4.value))
+            var diminuir = n3 - n4
+            res1.innerHTML = `A Subtração entre ${n3} e ${n4} é igual a <strong>${diminuir}</strong>`     
+        }
+        function igualvezes () {
+            var res3 = window.document.getElementById ("resp4")
+            var tex5 = window.document.getElementById("n5")
+            var tex6 = window.document.getElementById("n6")
+            var n5 = Number((tex5.value))
+            var n6 = Number((tex6.value))
+            var multiplicação = n5 * n6
+            res3.innerHTML = `A multiplicação entre ${n5} e ${n6} é igual a <strong>${multiplicação}</strong>`     
+        }
+        function igualdivisão () {
+            var res4 = window.document.getElementById ("resp4")
+            var tex7 = window.document.getElementById("n7")
+            var tex8 = window.document.getElementById("n8")
+            var n7 = Number((tex7.value))
+            var n8 = Number((tex8.value))
+            var divisão = n7 / n8
+            res4.innerHTML = `A divisão entre ${n7} e ${n8} é igual <strong>${divisão}</strong>`       
+        }
+        function IMC () {
+            var respimc = window.document.getElementById ("respimc")
+            var imc1 = window.document.getElementById ("peso")
+            var imc2 = window.document.getElementById ("altura")
+            var peso = Number((imc1.value))
+            var altura = Number((imc2.value))
+            var imcTotal = peso / (altura * altura) 
+            respimc.innerHTML = `seu IMC é ${imcTotal}`    
+        }
+    </script>
+
+</body>
+</html>

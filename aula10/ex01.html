@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento DOM</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        div#div1 {
+            background-color: white;
+            font: normal 20pt arial;
+            color: black;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        <strong>clique aqui</strong>
+    </div>
+    <script>
+        var a = window.document.getElementById ("div1")
+
+        function clicar () {
+            a.innerHTML = "<strong>clicou</strong>"
+            a.style.background = 'green'
+        }
+        function entrar () {
+            a.innerHTML = "<strong>clica logo</strong>"
+        } 
+        function sair () {
+            a.innerHTML = "<strong>clique aqui</strong>"    
+        }  
+    </script>
+</body>
+</html>
