@@ -13,7 +13,7 @@ function calculedelta () {
     var respbaskaramenos = (-nb - raiz) / (2 * na)
     var respbaskaramais = -(nb + raiz) / (2 * na)
 
-    if (respdelta = 0) {
+    if (respdelta == 0) {
         alert = `[ERRO!!!]  O seu delta é negativo`
     } else  {
         textdelta.innerHTML = `O seu delta foi: ${respdelta}`
