@@ -1,6 +1,6 @@
 body {
     background-image: linear-gradient(to right, rgb(53, 53, 230), rgb(140, 140, 238));
-    font: normal 15pt arial;
+    font: normal 1.2em arial;
 }
 header {
     color: white;
@@ -10,7 +10,7 @@ section {
     background-color: white;
     border-radius: 10px;
     padding: 15px;
-    width: 500px;
+    max-width: 500px;
 
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
@@ -31,6 +31,8 @@ input#n2 {
     width: 100px;
 }
 input#nome {
-    font: normal 20pt arial;
+    color: rgba(0, 0, 0, 0.726);
+    padding: 5px;
+    font: normal 1.2em arial;
     width: 450px;  
 }

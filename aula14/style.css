@@ -16,7 +16,7 @@ header {
 }
 main {
     max-width: 500px;
-    height: 500px;
+    
     background-color: white;
     margin: auto;
     border-radius: 20px;
@@ -25,3 +25,10 @@ main {
 }
 section > div {
     padding: 20px;
+}
+footer {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    font-size: 1.4em;
+}
